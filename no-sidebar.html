@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GimHack Inc. тест</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+					<header id="header">
+					<h1 id="logo"><a href="index.html">GimHack Inc. | Тест </a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="submenu">
+								<a href="#">Меню</a>
+								<ul>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="contact.html">Контакты</a></li>
+									<li class="submenu">
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-mobile"></span>
+						<h2>Начнем!</h2>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<!-- Content -->
+								<div class="content">
+									<section>
+										<header>
+										</header>
+										<!-- ТЕСТ -->
+				
+<form name = "q">
+<!--Вопросы-->
+<div>
+1. ИИ - это...<br>
+  <input name="q1" type="radio" value=1 />
+  а) Искусственный интеллект - наука и технология создания интеллектуальных машин
+  </div>
+  <div>  
+  <input name="q1" type="radio" value=0 />
+  б) Искусственный интеллект - наука об экономии Интернета
+  </div>
+  <div>  
+  <input name="q1" type="radio" value=0 />
+  в) Инженерная иллюминация - разновидность технологии освещения обьектов
+  </div>
+  <div>  
+  <input name="q1" type="radio" value=0 />
+   г) История идеологий
+  </div>
+  <br>
+<div>
+2. Watson представляет из себя...<br>
+  <input name="q2" type="radio" value=0 />
+   а) Разработку IBM - машину, способную решать сложные геометрические задачи
+  </div>
+  <div>
+  <input name="q2" type="radio" value=0 />
+  б) Разработку Honda - высокоинтеллектуального робота
+  </div>
+  <div>
+  <input name="q2" type="radio" value=1/>
+  в) Разработку IBM - машину, способную воспринимать человеческую речь
+  </div>
+  <div>
+  <input name="q2" type="radio" value=0 />
+  г) Известного чемпиона российской "Своей игры"
+  </div>
+  <br>
+<div>
+3. ИИ способен...<br>
+  <input name="q3" type="radio" value=0 />
+  а) Управлять максимум одним заводом или фабрикой, заметно повысив расходы на производство 
+  </div>
+  <div>
+  <input name="q3" type="radio" value=1 />
+  б) Создавать взаимосвязь между элементами, изначально задуманными, как независимые друг от друга
+  </div>
+  <div>
+  <input name="q3" type="radio" value=0 />
+  в) Решать философские парадоксы
+  </div>
+  <div>
+  <input name="q3" type="radio" value=0 />
+  г) Развивать мелкую моторику ребёнка
+  </div>
+  <br>
+<div>
+4. Deep Blue одержал победу над...<br>
+  <input name="q4" type="radio" value=0 />
+  а) Гонщиком Михаэлем Шумахером
+ </div>
+ <div>
+  <input name="q4" type="radio" value=0 />
+  б) Шахматистом Анатолием Карповым
+  </div>
+  <div>
+  <input name="q4" type="radio" value=0 />
+  в) Биатлонистом Свен Фишер
+  </div>
+  <div>
+  <input name="q4" type="radio" value=1 />
+  г) Шахматистом Гарри Каспаровым
+  </div>
+  <br>
+<div>
+5. В 1988 году Робертом Бёртоном был(а) разработан(а)...<br>
+  <input name="q5" type="radio" value=0 />
+  а) Система MYCIN
+  </div>
+  <div>  
+  <input name="q5" type="radio" value=1 />
+  б) Компьютерная версия игры "Двадцать вопросов"
+  </div>
+  <div>  
+  <input name="q5" type="radio" value=0 />
+  в) Автомобиль Audi 100 C3
+  </div>
+  <div>  
+  <input name="q5" type="radio" value=0 />
+  г) Персональный компьютер "Корвет"
+  </div>
+  <br>
+  <input type="button" value=" Подсчет результата" onClick="calc()" style = "color:black">
+  <textarea rows="3" cols="12" name="text" disabled ></textarea>
+  
+<!--прогресс бары и их значения-->
+<br><br>
+
+
+</form>
+<script type="text/javascript">
+function calc() {
+var math = 0;
+if (document.q.q1.value == "" || document.q.q2.value == "" || document.q.q3.value == "" || document.q.q4.value == "" || document.q.q5.value == "" ){document.q.text.value = "Прежде чем проверить узнать свой результат, ответьте на все вопросы.";}
+else{
+
+var countLetter = document.q.q1.value +  document.q.q2.value +  document.q.q3.value +  document.q.q4.value +  document.q.q5.value;
+var i;
+
+for (i = 0; i < 6; i++) {
+  if(countLetter[i] == "0"){math = math + 0;};
+  if(countLetter[i] == "1"){math = math + 1;};
+}
+
+if(math == 0){document.q.text.value = "Ваша зрительная память оставляет желать лучшего. Вы можете попробовать ещё раз. Внимательно ознакомьтесь с информацией на главной странице сайта!";};
+if(math == 1){document.q.text.value = "Вы правильно ответили на 1 из 5 вопросов. Вам стоит хорошо поработать над своей зрительной памятью. Тем более, что Вы можете попробовать пройти тест ещё раз";};
+if(math == 2){document.q.text.value = "Вы правильно ответили на 2 из 5 вопросов. Мы советуем Вам ещё раз внимательно прочитать главную страницу сайта и попробовать ещё раз";};
+if(math == 3){document.q.text.value = "Вы правильно ответили на 3 из 5 вопросов. Вам стоит быть внимательнее и тщательнее запоминать информацию!";};
+if(math == 4){document.q.text.value = "Вы правильно ответили на 4 из 5 вопросов. У Вас хорошая зрительная память, но Вам ещё есть куда стремиться!";};
+if(math == 5){document.q.text.value = "Вы ответили правильно на все 5 из 5 вопросов! Поздравляем, Ваша зрительная память держится на высшем уровне!";};
+document.q.q1.value == null;
+document.q.q2.value == null;
+document.q.q3.value == null;
+document.q.q4.value == null;
+document.q.q5.value == null;
+}
+}
+</script>
+
+
+									</section>
+								</div>
+
+						</section>
+
+					<!-- Two -->
+						
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://vk.com/club178411900" class="icon circle fa-vk"><span class="label">VK</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; GimHack Inc. 2018-2019</li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
